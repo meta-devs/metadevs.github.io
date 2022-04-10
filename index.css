@@ -8,6 +8,11 @@
     src: url(fonts/GothamBold.ttf) format("truetype");
 }
 
+html, body {
+    min-height: 100% !important;
+    height: 100%;
+}
+
 
 body {
     font-family: "METAFONT", Verdana, Tahoma;
@@ -18,14 +23,14 @@ body {
     /*background*/
     background-image: url("media/background_nologo.png");
     background-position-x: center;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 
 
 /*NAV BAR*/
 #navlist {
-    background-color: ;
+
     margin: 0px;
     border: 0px;
     padding: 0px;
