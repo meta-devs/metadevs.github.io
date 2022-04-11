@@ -15,13 +15,17 @@ html, body {
 
 
 body {
-    font-family: "METAFONT", Verdana, Tahoma;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     margin: 0px;
     border: 0px;
     padding: 0px;
 
+    font-family: "METAFONT", Verdana, Tahoma;
     /*background*/
-    background-image: url("media/background_nologo.png");
+    background-image: url("media/background.png");
     background-position-x: center;
     background-size: cover;
 }
@@ -30,23 +34,33 @@ body {
 
 /*NAV BAR*/
 #navlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 
     margin: 0px;
     border: 0px;
     padding: 0px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+#details {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
 }
 
 .navitem {
+    margin-left: 40px;
+    margin-right: 40px;
+    
     font-family: "METAFONT", Verdana, Tahoma;
     text-shadow: 5px 5px #000000;
     font-weight: 50;
     font-size: 1.5rem;
-    margin: 40px;
     color: white;
 }
+
 
 
 /*INTRO BODY*/
@@ -54,7 +68,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 120px;
 
     font-family: 'Montserrat', sans-serif;
 }
@@ -63,6 +76,8 @@ body {
     color: rgb(201, 201, 201);
     line-height: 172.89%;
     width: 35%;
+
+    text-align: center;
 }
 
 #intro-content h1 {
@@ -70,6 +85,27 @@ body {
     font-family: "METAFONT", Verdana, Tahoma;
     font-size: 3.5rem;
 }
+
+
+
+/*DOWNBAR*/
+#downbar-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 30px;
+}
+
+#downbar {
+    width: 10%;
+    height: 5px;
+
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
 
 
 
