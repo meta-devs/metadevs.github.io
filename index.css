@@ -15,6 +15,16 @@ html, body {
 
 
 body {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+#top-page {
+    min-height: 100% !important;
+    height: 100%;
+
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,11 +35,11 @@ body {
 
     font-family: "METAFONT", Verdana, Tahoma;
     /*background*/
+    background-color: white;
     background-image: url("media/background.png");
     background-position-x: center;
     background-size: cover;
 }
-
 
 
 /*NAV BAR*/
@@ -53,12 +63,21 @@ body {
 .navitem {
     margin-left: 40px;
     margin-right: 40px;
+    position: relative;
+    top: 0px;
     
     font-family: "METAFONT", Verdana, Tahoma;
     text-shadow: 5px 5px #000000;
     font-weight: 50;
     font-size: 1.5rem;
     color: white;
+    
+    transition: top 0.2s;
+}
+
+.navitem:hover {
+    cursor: pointer;
+    top: -10px;
 }
 
 
@@ -70,6 +89,17 @@ body {
     align-items: center;
 
     font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width : 950px) {
+    #intro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        font-family: 'Montserrat', sans-serif;
+    }
 }
 
 #intro-content {
@@ -105,6 +135,16 @@ body {
     background-color: aliceblue;
     border-radius: 5px;
 }
+
+
+/*BOTTOM PAGE*/
+#bottom-page {
+    background-color: aliceblue;
+    height: 100vh;
+    width: 100%;
+}
+
+
 
 
 

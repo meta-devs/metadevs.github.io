@@ -1,3 +1,4 @@
-console.log(window.innerHeight)
-console.log(window.innerWidth)
+let WinY = console.log(window.innerHeight)
+let WinX = console.log(window.innerWidth)
+
 
