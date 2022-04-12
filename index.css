@@ -91,7 +91,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-@media (max-width : 950px) {
+@media (max-width : 1200px) {
     #intro {
         display: flex;
         justify-content: center;
