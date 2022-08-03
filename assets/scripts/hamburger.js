@@ -1,3 +1,4 @@
+console.log("HELLO HAMBURGER");
 let ham = document.getElementById("nav-menu");
 let first = ham.getElementsByTagName("div")[0];
 let second = ham.getElementsByTagName("div")[1];
