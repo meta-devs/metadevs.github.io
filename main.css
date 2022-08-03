@@ -1,0 +1,28 @@
+
+:root
+{
+    --blue: rgb(43, 170, 255);
+}
+
+#navbar
+{
+    user-select: none;
+}
+
+#nav-item
+{
+    user-select: none;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    color: white;
+}
+
+#nav-item:hover {
+    transition: color 0.2s ease;
+    color: var(--blue);
+}
+
+#nav-selected
+{
+    color: var(--blue);
+}
