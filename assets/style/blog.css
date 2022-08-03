@@ -1,0 +1,16 @@
+@import url("./data.css");
+
+@font-face {
+    font-family: "Gotham Medium";
+    src: url("./assets/fonts/Gotham/GothamMedium.ttf");
+}
+
+@font-face {
+    font-family: "Gotham Bold";
+    src: url("./assets/fonts/Gotham/GothamBold.ttf");
+}
+
+body
+{
+    background-color: #141414;
+}

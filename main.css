@@ -1,32 +1,100 @@
+@import url("./assets/style/data.css");
 
-:root
-{
-    --blue: rgb(43, 170, 255);
+@font-face {
+    font-family: "Gotham Medium";
+    src: url("./assets/fonts/Gotham/GothamMedium.ttf");
+}
+
+@font-face {
+    font-family: "Gotham Bold";
+    src: url("./assets/fonts/Gotham/GothamBold.ttf");
 }
 
 body {
     background-color: black;
+    font-family: "Gotham Medium";
+    font-size: 16px;
+
+    margin: 0;
+    padding: 0;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 #navbar
 {
     user-select: none;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 20px;
+
+    /* background-color: cadetblue; */
 }
 
-#nav-item
+.nav-item
 {
     user-select: none;
     text-decoration: none;
     transition: color 0.2s ease;
     color: white;
+    padding-right: 60px;
+    font-family: "Gotham Bold";
+    margin-right: auto;
+    transition: font-size 0.2s ease;
+    font-size: 2rem;
 }
 
-#nav-item:hover {
+.nav-item:hover {
     transition: color 0.2s ease;
     color: var(--blue);
+    transition: font-size 0.2s ease;
+    font-size: 2.1rem;
 }
 
 #nav-selected
 {
     color: var(--blue);
+}
+
+#nav-menu
+{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 40px;
+    height: 40px;
+}
+
+#nav-menu:hover
+{
+
+}
+
+#nav-menu div {
+    background-color: white;
+    height: 5px;
+    width: 100%;
+    transition: all 0.2s;
+    position: relative;
+}
+
+#nav-logo
+{
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-item
+    {
+        display: none;
+    }
+    #nav-menu
+    {
+        display: flex;
+    }
 }
