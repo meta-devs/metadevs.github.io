@@ -70,12 +70,8 @@ body {
     height: 40px;
 }
 
-#nav-menu:hover
-{
-
-}
-
 #nav-menu div {
+    transition: color 0.2s ease;
     background-color: white;
     height: 5px;
     width: 100%;
