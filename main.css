@@ -4,6 +4,10 @@
     --blue: rgb(43, 170, 255);
 }
 
+body {
+    background-color: black;
+}
+
 #navbar
 {
     user-select: none;
