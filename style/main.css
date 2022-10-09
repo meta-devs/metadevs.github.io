@@ -1,0 +1,146 @@
+@import url("./meta.css");
+
+@font-face {
+    font-family: "Gotham Bold";
+    src: url("../assets/fonts/Gotham/GothamBold.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&display=swap');
+
+body {
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+    background-color: var(--main_bkg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* NAVIGATION MENU */
+#nav-menu {
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    user-select: none;
+    /* background-color: rgb(7,7,7); */
+}
+
+#nav-logo {
+    height: 80px;
+}
+
+#nav-items {
+    display: flex;
+}
+
+#nav-items #at {
+    color: var(--blue);
+}
+
+#nav-items > * {
+    padding-right: 60px;
+
+    text-decoration: none;
+    font-family: "Gotham Bold";
+    font-size: 1.8rem;
+
+    transition: color 0.2s;
+    color: white;
+}
+
+#nav-items > *:hover {
+    transition: color 0.2s;
+    color: var(--blue);
+}
+
+/* LIST CONTENT */
+#content {
+    margin-top: 30px;
+    /* background-color: gray; */
+    height: 100%;
+}
+
+#path {
+    /* background-color: blue; */
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#path > * {
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding-left: 10px;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.path-at {
+    color: rgb(54, 178, 255);
+}
+
+.path-item:not(.path-at):hover {
+    cursor: pointer;
+    color: rgb(54, 178, 255);
+}
+
+#list > * {
+    margin-top: 20px;
+}
+
+.list-item {
+    transition: background-color 0.2s;
+    background-color: rgb(24, 24, 24);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.list-item:hover {
+    transition: background-color 0.2s;
+    background-color: rgb(38, 38, 38);
+    cursor: pointer;
+}
+
+.list-item > .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item > .left > .title {
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-family: "Gotham Bold";
+    font-size: 1.4rem;
+}
+
+.list-item > .left .tags {
+    display: flex;
+    margin-left: 30px;
+}
+
+.list-item > .left > .tags > * {
+    /* background-color: rgb(50, 50, 50); */
+    margin-left: 10px;
+    font-family: monospace;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1200px)  {
+    #nav-menu {
+        display: none;
+    }
+}

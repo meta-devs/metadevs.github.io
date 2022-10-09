@@ -1,0 +1,12 @@
+:: DATA
+
+title       "Test Article 1"
+tags        "a", "b", "c"
+author      "Jon"
+date        "10/9/2022"
+
+:: DOCUMENT
+
+# Hello World
+This is some text
+
