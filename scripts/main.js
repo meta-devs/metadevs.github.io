@@ -1,11 +1,11 @@
 const base_url = "http://127.0.0.1:5500/";
 
-async function get_file(url) {
-	let response = await fetch(url);
-	let text = await response.text();
+// async function get_file(url) {
+// 	let response = await fetch(url);
+// 	let text = await response.text();
 
-	console.log(text);
-}
+// 	console.log(text);
+// }
 
 console.log("RUNNING JS");
 console.log(window.location.href);
