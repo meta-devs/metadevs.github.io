@@ -1,5 +1,6 @@
 import config from "./config.js";
 const base_url = config.base_url + "/assets/articles";
+console.log(base_url);
 
 const BLOG_HTML = document.body.innerHTML;
 const BLOG_PATH = document.getElementById("path");
