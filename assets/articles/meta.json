@@ -1,0 +1,50 @@
+{
+
+    "cats": {
+        "Science": {},
+        "Programming": {
+            "C": {}
+        }
+    },
+
+    "meta": {
+
+        "test_1": {
+            "title": "Example Article 1",
+            "tags": ["epic", "tag", "list"],
+            "authors": ["Jon"],
+            "date": "Jan 1, 2022",
+            "pages": [],
+            "category": ""
+        },
+
+        "test_2": {
+            "title": "Example Article 2",
+            "tags": ["a", "ab", "abc", "abcd"],
+            "authors": ["Jon"],
+            "date": "Jan 0, 1993",
+            "pages": [],
+            "category": ""
+        },
+
+        "code_1": {
+            "title": "Epic Coding Article",
+            "tags": ["meta", "man"],
+            "authors": ["Sven"],
+            "date": "Jan -15, 3027",
+            "pages": {
+                "page_1": {
+                    "title": "$title$ Page 1",
+                    "section": "cat_1"
+                },
+                "page_2": {
+                    "title": "$title$ Page 2",
+                    "section": "cat_2"
+                }
+            },
+            "sections": ["cat_1", "cat_2"],
+            "category": "Programming/C"
+        }
+
+    }
+}

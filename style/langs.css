@@ -1,0 +1,11 @@
+[data-lang="lua51"] .keyword {
+    color: rgb(41, 155, 255);
+}
+
+[data-lang="lua51"] .operator {
+    color: rgb(145, 145, 145);
+}
+
+[data-lang="lua51"] .call {
+    color: rgb(82, 198, 111);
+}

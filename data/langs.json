@@ -1,0 +1,17 @@
+{
+    "lua51":{
+        "name": "lua 5.1",
+        "syntax": {
+            "keywords": [
+                "and", "break", "do", "else", "elseif", "end", "false", "for", "function", "if", "in", "local", "nil", "not", "or", "repeat", "return", "then", "true", "until", "while"
+            ],
+            "operators": [
+                "+", "-", "*", "/", "%", "^", "#", "==", "~=", "<=", ">=", "<", ">", "=", "(", ")", "{", "}", "[", "]", ";", ":", ",", "..", "..."
+            ],
+            "number": [
+                "/^\\d*\\.?\\d*$/",
+                "/^0x[\\da-fA-F]+$/"
+            ]
+        }
+    }
+}

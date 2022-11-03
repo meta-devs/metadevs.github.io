@@ -21,6 +21,7 @@ body {
 
 /* NAVIGATION MENU */
 #nav-menu {
+    margin-top: 2%;
     height: 100px;
 
     display: flex;
@@ -28,7 +29,6 @@ body {
     align-items: center;
 
     user-select: none;
-    /* background-color: rgb(7,7,7); */
 }
 
 #nav-logo {
@@ -43,7 +43,7 @@ body {
     color: var(--blue);
 }
 
-#nav-items > * {
+#nav-items>* {
     padding-right: 60px;
 
     text-decoration: none;
@@ -54,7 +54,7 @@ body {
     color: white;
 }
 
-#nav-items > *:hover {
+#nav-items>*:hover {
     transition: color 0.2s;
     color: var(--blue);
 }
@@ -73,7 +73,7 @@ body {
     align-items: center;
 }
 
-#path > * {
+#path>* {
     font-family: monospace;
     font-weight: bolder;
     font-size: 1.3rem;
@@ -93,32 +93,34 @@ body {
     color: rgb(54, 178, 255);
 }
 
-#list > * {
+#list>* {
     margin-top: 20px;
 }
 
 .list-item {
-    transition: background-color 0.2s;
+    transition: background-color 0.1s;
     background-color: rgb(24, 24, 24);
     height: 100px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     border-radius: 10px;
 }
 
 .list-item:hover {
-    transition: background-color 0.2s;
-    background-color: rgb(38, 38, 38);
+    transition: background-color 0.1s;
+    background-color: rgb(32, 32, 32);
+    border-radius: 10px;
     cursor: pointer;
+    box-shadow: 0px 0px 8px black;
 }
 
-.list-item > .left {
+.list-item>.left {
     display: flex;
     flex-direction: column;
 }
 
-.list-item > .left > .title {
+.list-item>.left>.title {
     margin: 0;
     margin-top: 20px;
     margin-left: 40px;
@@ -126,20 +128,65 @@ body {
     font-size: 1.4rem;
 }
 
-.list-item > .left .tags {
+.list-item>.left .tags {
     display: flex;
     margin-left: 30px;
 }
 
-.list-item > .left > .tags > * {
-    /* background-color: rgb(50, 50, 50); */
+.list-item>.left>.tags>* {
+    background-color: rgb(15, 15, 15);
     margin-left: 10px;
     font-family: monospace;
+    border-radius: 3px;
+    padding: 5px;
 }
 
+.list-item>.right {
+    font-family: "Gotham Bold";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 200px;
+}
+
+.list-item>.right>* {
+    margin: 0;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(161, 161, 161)
+}
+
+.code {
+    font-family: monospace;
+    background-color: rgb(27, 27, 27);
+    padding: 16px;
+    line-height: 160%;
+    font-size: 1rem;
+    display: flex;
+    border-radius: 10px;
+}
+
+.code>.lines {
+    width: 50px;
+    text-align: center;
+    user-select: none;
+    color: rgb(80, 80, 80);
+    font-weight: bolder;
+}
+
+.code>.text {
+    width: 100%;
+    /* font-weight: bold; */
+}
+
+.code>.text::selection {
+    background: rgb(90, 90, 90);
+}
 
 /* MEDIA QUERIES */
-@media (max-width: 1200px)  {
+@media (max-width: 1200px) {
     #nav-menu {
         display: none;
     }

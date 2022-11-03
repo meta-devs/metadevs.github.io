@@ -2,10 +2,11 @@
 
 <html>
 	<head>
-		<title>MetaDevs | Blog</title>
+		<title>MetaDevs Blog</title>
 		<link rel="stylesheet" type="text/css" href="../style/main.css" />
 		<link rel="stylesheet" type="text/css" href="../style/blog.css" />
-		<script defer src="../scripts/main.js"></script>
+		<script defer src="../scripts/main.js" type="module"></script>
+		<script defer src="../scripts/blog.js" type="module"></script>
 	</head>
 
 	<body>
@@ -25,31 +26,8 @@
 				<p>/</p>
 			</nav>
 			<div id="list">
-				<div class="list-item" data-article="assets/articles/test_1">
-					<div class="left">
-						<p class="title">Example Title</p>
-						<div class="tags">
-							<p>tags:</p>
-							<p>test_1,</p>
-							<p>test_2,</p>
-							<p>test_3</p>
-						</div>
-					</div>
-					<div class="right"></div>
-				</div>
-
-				<div class="list-item">
-					<div class="left">
-						<p class="title">Example Title</p>
-						<div class="tags">
-							<p>tags:</p>
-							<p>test_1,</p>
-							<p>test_2,</p>
-							<p>test_3</p>
-						</div>
-					</div>
-					<div class="right"></div>
-				</div>
+				<div id="list-cats"></div>
+				<div id="list-articles"></div>
 			</div>
 		</div>
 	</body>
